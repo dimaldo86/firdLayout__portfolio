@@ -1,0 +1,193 @@
+:root {
+    --navbar-color: #0d6efd;
+    --primary-color:#74a6f1;
+    --secondary-color: #fff;
+    --footer-color:#0c4fb4;
+    --font:'Montserrat', sans-serif;
+    --box:border-box;
+}
+html {
+    box-sizing: var(--box);
+}
+*, ::after, ::before {
+    box-sizing: var(--box);
+}
+body {
+    background-color: var(--primary-color);
+    font-family: var(--font);
+}
+
+/*header style start*/
+.navbar {
+    min-height: 80px;
+}
+.navbar-brand:hover {
+    opacity: 0.85;
+}
+.nav-item {
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.nav-item:hover {
+
+    background-color: var(--primary-color);
+}
+.navbar-light .navbar-nav .nav-link  {
+    color: var(--secondary-color);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(65, 63, 63);
+}
+.btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.btn:hover  {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    box-shadow: 15px 25px 25px 11px rgba(46, 45, 45, 0.5);
+    color: rgb(65, 63, 63);   
+}
+.navbar-light .navbar-toggler {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+.navbar-light .navbar-toggler-icon {
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.modal-header {
+    background-color: var(--primary-color);
+}
+
+/*header style end*/
+
+/*main style start*/
+
+.row__item {
+    height: auto;
+    background:var(--navbar-color);
+    border-radius: 8px; 
+    -webkit-transition: all .3s ease-out; 
+    transition: all .3s ease-out; 
+}
+.row__item:hover {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    box-shadow: 15px 25px 25px 11px rgba(46, 45, 45, 0.5);    
+}
+.row__link {
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.row__item img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.row__item span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 15px 0;
+    color:var(--secondary-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+/*main style end*/
+
+/*footer style start*/
+
+.footer {
+    min-height: 150px;
+    background-color:var(--footer-color) ;
+}
+.list-group-item {
+    background-color: transparent;
+    border: none;
+}
+.list-group__link  {
+    position: relative;
+
+    text-decoration: none;
+    color: var(--secondary-color);
+
+    padding: 8px 0 8px 0;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.list-group__link:hover {
+    color: rgb(65, 63, 63);
+
+}
+.list-group__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    right: 0;
+    bottom: -3px;
+
+    width: 0;
+    height: 2px; 
+
+    background-color: var(--primary-color); 
+    -webkit-transition: width 0.5s ease-out; 
+    transition: width 0.5s ease-out; 
+}
+.list-group__link:hover::after {
+    content: "";
+    
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    left: 0;
+    bottom: -3px;
+    
+    background-color: var(--primary-color); 
+    -webkit-transition: width 0.5s ease-out; 
+    transition: width 0.5s ease-out;  
+}
+.footer__item-social  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;  
+}
+.social__link {
+    margin-right: 10px;
+    font-size: 24px;
+    color: var(--secondary-color);
+    padding: 0 15px;
+    border-radius: 5px;
+
+    -webkit-transition: all 0.2s linear;
+
+    transition: all 0.2s linear;
+}
+.social__link:hover {
+    background-color: var(--primary-color);
+    color: rgb(65, 63, 63);
+}
+
+
+
+
+/*footer style end*/
+	
